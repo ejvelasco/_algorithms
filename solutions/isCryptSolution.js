@@ -1,3 +1,13 @@
+/**
+* Decodes a message and checks if the solution is a valid equation.
+* Approach: Mapping.
+* Time Complexity: O(c*w + s), c = crypt.length, w = crypt[i].length, s = solution.length.  
+* Space Complexity: O(c + s), c = crypt.length, s = solution.length.
+* @param {string[]} crypt 
+* @param {string[][]} solution 
+* @returns {boolean} result.
+*/
+
 function isCryptSolution(crypt, solution) {
   const key = {};
   solution.forEach((row) => {
