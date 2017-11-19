@@ -32,8 +32,8 @@ function findLongestSubarrayBySum(s, arr) {
   if (sequences.length === 0) {
     return [-1];
   }
-  let largestMagnitude = Math.abs(sequences[0][0] - sequences[0][1]);
   let longestSequence = sequences[0];
+  let largestMagnitude = Math.abs(longestSequence[0] - longestSequence[1]);
   for (let i = 1; i < sequences.length; i++) {
     const sequence = sequences[i];
     const magnitude = Math.abs(sequence[0] - sequence[1]);
