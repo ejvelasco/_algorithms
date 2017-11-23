@@ -31,4 +31,3 @@ function findPeakOneDimensional(A) {
 }
 
 
-console.log(findPeakOneDimensional([1, 2, 3, 1]));
