@@ -14,7 +14,7 @@
 * @returns {number} Maximum consecutive sum.
 */
 
-function productExceptSelf(nums, m) {
+function findProductExceptSelf(nums, m) {
   const prefixProducts = nums.map(num => 1);
   let g = 0;
   let suffixProduct = 1;

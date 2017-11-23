@@ -19,7 +19,7 @@
 * @returns {number} Minimum number of steps needed to traverse the points in order.
 */
 
-function findMinSteps(A, B) {
+function findMininumSteps(A, B) {
   let minSteps = 0;
   for (let i = 0; i < A.length - 1; i++) {
     const first = [A[i], B[i]];
