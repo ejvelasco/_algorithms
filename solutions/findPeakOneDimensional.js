@@ -2,9 +2,9 @@
 * Given a one dimensional array of integers A, A[i] is a peak iff A[i - 1] is less than or equal to A[i], 
 * and A[i + 1] is less than or equal to A[i]. 
 * Find any peak in A. 
-* Approach: Divide and Conquer. 
+* Approach: Divide and Conquer, Recursion. 
 * Time Complexity: O(log(N)).
-* Space Complexity: O(N).
+* Space Complexity: O(N) if stack is considered, O(1) otherwise.
 * @param {number[]} A 
 * @param {number} i
 * @param {number} j 

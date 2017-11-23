@@ -5,14 +5,14 @@
 * Approach: Kadane's Algorithm.
 * Time Complexity: O(n).  
 * Space Complexity: O(n).
-* @param {number[]} inputArray 
+* @param {number[]} a
 * @returns {number} Maximum consecutive sum.
 */
 
-function findMaxConsecutiveSum(inputArray) {
-  let maxEndingHere = inputArray[0];
-  let maxSoFar = inputArray[0];
-  inputArray.slice(1, inputArray.length).forEach((x) => {
+function findMaxConsecutiveSum(a) {
+  let maxEndingHere = a[0];
+  let maxSoFar = a[0];
+  a.slice(1, a.length).forEach((x) => {
     maxEndingHere = Math.max(x, maxEndingHere + x);
     maxSoFar = Math.max(maxEndingHere, maxSoFar);
   });

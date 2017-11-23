@@ -9,25 +9,25 @@
 * Time Complexity: O(n).  
 * Space Complexity: O(n).
 * @param {number} s 
-* @param {number[]} arr
+* @param {number[]} a
 * @returns {number[]} Longest contiguous subarray with sum s, or [-1].
 */
 
-function findLongestSubarrayBySum(s, arr) {
-  let currentSum = arr[0];
+function findLongestSubarrayBySum(s, a) {
+  let currentSum = a[0];
   let start = 0;
-  const n = arr.length;
+  const n = a.length;
   const sequences = [];
   for (let i = 1; i <= n; i++) {
     while (currentSum > s && start < i - 1) {
-      currentSum -= arr[start];
+      currentSum -= a[start];
       start++;
     }
     if (currentSum === s) {
       sequences.push([start + 1, i]);
     }
     if (i < n) {
-      currentSum += arr[i];
+      currentSum += a[i];
     }
   }
   if (sequences.length === 0) {
