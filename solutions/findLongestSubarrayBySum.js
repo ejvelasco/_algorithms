@@ -5,6 +5,7 @@
 * several possible answers, return the one with the smallest left bound. 
 * If there are no answers, return [-1]. Your answer should be 1-based, 
 * meaning that the first position of the array is 1 instead of 0.
+* Approach: Iterative.
 * Time Complexity: O(n).  
 * Space Complexity: O(n).
 * @param {number} s 

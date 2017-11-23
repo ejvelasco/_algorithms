@@ -1,6 +1,6 @@
 /**
 * Calculate the power set of a finite set.
-* Approach: Iterative.
+* Approach: Iteration.
 * Time Complexity: O(n*2^n).
 * Space Complexity: O(n*2^n).
 * @param {[]} set 
