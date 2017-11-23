@@ -23,7 +23,6 @@ function findPeak(A, i, j, n) {
   }
 }
 
-
 function findPeakOneDimensional(A) {
   const i = 0;
   const j = A.length;
