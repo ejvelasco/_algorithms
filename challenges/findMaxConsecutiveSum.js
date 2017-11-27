@@ -10,11 +10,11 @@
 */
 
 function findMaxConsecutiveSum(a) {
-  let maxEndingHere = a[0];
-  let maxSoFar = a[0];
-  a.slice(1, a.length).forEach((x) => {
-    maxEndingHere = Math.max(x, maxEndingHere + x);
-    maxSoFar = Math.max(maxEndingHere, maxSoFar);
-  });
-  return maxSoFar;
+	let maxEndingHere = a[0];
+	let maxSoFar = a[0];
+	a.slice(1, a.length).forEach((x) => {
+		maxEndingHere = Math.max(x, maxEndingHere + x);
+		maxSoFar = Math.max(maxEndingHere, maxSoFar);
+	});
+	return maxSoFar;
 }

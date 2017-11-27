@@ -14,16 +14,16 @@
 * @returns {number} Maximum consecutive sum.
 */
 
-function findProductExceptSelf(nums, m) {
-  const prefixProducts = nums.map(num => 1);
-  let g = 0;
-  let suffixProduct = 1;
-  for (let i = 1; i < nums.length; i++) {
-    prefixProducts[i] = (prefixProducts[i - 1] * nums[i - 1]) % m;
-  }
-  for (let i = 0; i < nums.length; i++) {
-    g += (prefixProducts[prefixProducts.length - i - 1] * suffixProduct) % m;
-    suffixProduct = (suffixProduct * nums[nums.length - i - 1]) % m;
-  }
-  return g % m;
+function calculateProductExceptSelf(nums, m) {
+	const prefixProducts = nums.map(num => 1);
+	let g = 0;
+	let suffixProduct = 1;
+	for (let i = 1; i < nums.length; i++) {
+		prefixProducts[i] = (prefixProducts[i - 1] * nums[i - 1]) % m;
+	}
+	for (let i = 0; i < nums.length; i++) {
+		g += (prefixProducts[prefixProducts.length - i - 1] * suffixProduct) % m;
+		suffixProduct = (suffixProduct * nums[nums.length - i - 1]) % m;
+	}
+	return g % m;
 }
