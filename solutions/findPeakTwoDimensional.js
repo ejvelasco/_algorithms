@@ -5,8 +5,8 @@
 * M[i + 1][j], M[i - 1][j], M[i][j + 1], M[i][j - 1]. 
 * Find any peak in M. 
 * Approach: Divide and Conquer, Recursion. 
-* Time Complexity: O(M * log(N)) for an M x N matrix.
-* Space Complexity: O(N) if stack is considered, O(1) otherwise.
+* Time Complexity: O(n * log(n)) for an M x N matrix.
+* Space Complexity: O(n) if stack is considered, O(1) otherwise.
 * @param {number[][] M}  
 * @param {number} m
 * @param {number} n 

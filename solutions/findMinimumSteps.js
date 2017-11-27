@@ -11,7 +11,7 @@
 * (x+1,y+1), 
 * (x-1,y+1), 
 * (x+1,y-1) 
-* Approach: Iterative.
+* Approach: Iteration.
 * Time Complexity: O(n).
 * Space Complexity: O(n).
 * @param {number[]} a 

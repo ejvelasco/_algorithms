@@ -24,7 +24,7 @@ function findSubsetsIterative(set) {
 
 /**
 * Calculate the power set of a finite set.
-* Approach: Recursive.
+* Approach: Recursion.
 * Time Complexity: O(n*2^n).
 * Space Complexity: O(n*2^n).
 * @param {[]} set 

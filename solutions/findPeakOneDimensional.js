@@ -3,8 +3,8 @@
 * and A[i + 1] is less than or equal to A[i]. 
 * Find any peak in A. 
 * Approach: Divide and Conquer, Recursion. 
-* Time Complexity: O(log(N)).
-* Space Complexity: O(N) if stack is considered, O(1) otherwise.
+* Time Complexity: O(log(n)).
+* Space Complexity: O(n) if stack is considered, O(1) otherwise.
 * @param {number[]} A 
 * @param {number} i
 * @param {number} j 
